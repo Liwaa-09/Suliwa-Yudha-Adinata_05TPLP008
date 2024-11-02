@@ -1,0 +1,277 @@
+<html>
+ <head>
+  <title>
+   Daftar Izin Karyawan
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white h-screen shadow-md">
+    <div class=" p-4 flex items-center"> 
+     <img alt="University Logo" class="w-10 h-10 mr-2" height="50" src="/assets/logo.png" width="50"/>
+      <h1 class="text-lg font-bold">
+       SYNOVA
+      </h1>
+    </div>
+    
+    <div class="p-4">
+      <div class="flex items-center mb-4">
+       <img alt="User Avatar" class="w-10 h-10 rounded-full mr-2" height="40" src="/assets/profil.png" width="40"/>
+       <div>
+        <p class="font-semibold">
+         Welcome, Suliwa Yudha
+        </p>
+        <p class="text-sm text-gray-600">
+         Administrator
+        </p>
+       </div>
+      </div>
+      <nav>
+       <ul>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="index.html">
+          <i class="fas fa-home mr-2">
+          </i>
+          Dashboard
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU KARYAWAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="karyawan.html">
+          <i class="fas fa-users mr-2">
+          </i>
+          Karyawan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="jabatan.html">
+          <i class="fas fa-briefcase mr-2">
+          </i>
+          Jabatan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="divisi.html">
+          <i class="fas fa-building mr-2">
+          </i>
+          Divisi
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU ABSENSI
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="absensi.html">
+          <i class="fas fa-calendar-check mr-2">
+          </i>
+          Absensi
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="izin.html">
+          <i class="fas fa-calendar-times mr-2">
+          </i>
+          Izin
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="lembur.html">
+          <i class="fas fa-clock mr-2">
+          </i>
+          Lembur
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU PENGGAJIAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+          <i class="fas fa-file-invoice-dollar mr-2">
+          </i>
+          Slip Gaji
+         </a>
+        </li>
+        <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-file-alt mr-2">
+           </i>
+           Cetak Slip Gaji
+          </a>
+         </li>
+         <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-file-alt mr-2">
+           </i>
+           Cetak Laporan
+          </a>
+         </li>
+         <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-user-cog mr-2">
+           </i>
+           Pengguna
+          </a>
+         </li>
+        </ul>
+       </nav>
+      </div>
+      <div class="p-4">
+       <button class="w-full bg-blue-600 text-white py-2 rounded">
+        <i class="fas fa-sign-out-alt mr-2">
+        </i>
+        Logout
+       </button>
+      </div>
+     </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h1 class="text-2xl font-semibold">
+      Daftar Izin Karyawan
+     </h1>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded">
+      <i class="fas fa-check-circle">
+      </i>
+      Ubah Status
+     </button>
+    </div>
+    <div class="bg-white p-4 rounded shadow-md">
+     <div class="flex justify-between items-center mb-4">
+      <div>
+       <label class="mr-2" for="entries">
+        Show
+       </label>
+       <select class="border rounded p-1" id="entries">
+        <option>
+         10
+        </option>
+        <!-- Add other options as needed -->
+       </select>
+       <span class="ml-2">
+        entries
+       </span>
+      </div>
+      <div>
+       <label class="mr-2" for="search">
+        Search:
+       </label>
+       <input class="border rounded p-1" id="search" type="text"/>
+      </div>
+     </div>
+     <table class="min-w-full bg-white">
+      <thead>
+       <tr>
+        <th class="py-2 border-b">
+         No
+        </th>
+        <th class="py-2 border-b">
+         Nama
+        </th>
+        <th class="py-2 border-b">
+         Izin
+        </th>
+        <th class="py-2 border-b">
+         Tanggal
+        </th>
+        <th class="py-2 border-b">
+         Jam
+        </th>
+        <th class="py-2 border-b">
+         Keterangan
+        </th>
+        <th class="py-2 border-b">
+         Status
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td class="py-2 border-b text-center">
+         1
+        </td>
+        <td class="py-2 border-b text-center">
+         Sung Hanbin
+        </td>
+        <td class="py-2 border-b text-center">
+         Pulang Lebih Awal
+        </td>
+        <td class="py-2 border-b text-center">
+         2024-10-2
+        </td>
+        <td class="py-2 border-b text-center">
+         10:35:00
+        </td>
+        <td class="py-2 border-b text-center">
+         syuting
+        </td>
+        <td class="py-2 border-b text-center">
+         Disetujui
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 border-b text-center">
+         2
+        </td>
+        <td class="py-2 border-b text-center">
+         Soyeon
+        </td>
+        <td class="py-2 border-b text-center">
+         Datang Terlambat
+        </td>
+        <td class="py-2 border-b text-center">
+         2024-10-2
+        </td>
+        <td class="py-2 border-b text-center">
+         11:04:00
+        </td>
+        <td class="py-2 border-b text-center">
+         macet
+        </td>
+        <td class="py-2 border-b text-center">
+         Menunggu Konfirmasi
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 border-b text-center">
+         3
+        </td>
+        <td class="py-2 border-b text-center">
+         Dita Karang
+        </td>
+        <td class="py-2 border-b text-center">
+         Datang Terlambat
+        </td>
+        <td class="py-2 border-b text-center">
+         2024-10-2
+        </td>
+        <td class="py-2 border-b text-center">
+         01:35:00
+        </td>
+        <td class="py-2 border-b text-center">
+         batuk
+        </td>
+        <td class="py-2 border-b text-center">
+         Disetujui
+        </td>
+       </tr>
+       
+       <!-- Repeat for each news item -->
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

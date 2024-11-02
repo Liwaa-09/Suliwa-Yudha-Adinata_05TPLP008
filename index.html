@@ -1,0 +1,223 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Admin Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white h-screen shadow-md">
+    <div class=" p-4 flex items-center"> 
+     <img alt="University Logo" class="w-10 h-10 mr-2" height="50" src="/assets/logo.png" width="50"/>
+      <h1 class="text-lg font-bold">
+       SYNOVA
+      </h1>
+    </div>
+    
+    <div class="p-4">
+      <div class="flex items-center mb-4">
+       <img alt="User Avatar" class="w-10 h-10 rounded-full mr-2" height="40" src="/assets/profil.png" width="40"/>
+       <div>
+        <p class="font-semibold">
+         Welcome, Suliwa Yudha
+        </p>
+        <p class="text-sm text-gray-600">
+         Administrator
+        </p>
+       </div>
+      </div>
+      <nav>
+       <ul>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="index.html">
+          <i class="fas fa-home mr-2">
+          </i>
+          Dashboard
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU KARYAWAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="karyawan.html">
+          <i class="fas fa-users mr-2">
+          </i>
+          Karyawan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="jabatan.html">
+          <i class="fas fa-briefcase mr-2">
+          </i>
+          Jabatan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="divisi.html">
+          <i class="fas fa-building mr-2">
+          </i>
+          Divisi
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU ABSENSI
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="absensi.html">
+          <i class="fas fa-calendar-check mr-2">
+          </i>
+          Absensi
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="izin.html">
+          <i class="fas fa-calendar-times mr-2">
+          </i>
+          Izin
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="lembur.html">
+          <i class="fas fa-clock mr-2">
+          </i>
+          Lembur
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU PENGGAJIAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+          <i class="fas fa-file-invoice-dollar mr-2">
+          </i>
+          Slip Gaji
+         </a>
+        </li>
+        <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-file-alt mr-2">
+           </i>
+           Cetak Slip Gaji
+          </a>
+         </li>
+         <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-file-alt mr-2">
+           </i>
+           Cetak Laporan
+          </a>
+         </li>
+         <li class="mb-2">
+          <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+           <i class="fas fa-user-cog mr-2">
+           </i>
+           Pengguna
+          </a>
+         </li>
+        </ul>
+       </nav>
+      </div>
+      <div class="p-4">
+       <button class="w-full bg-blue-600 text-white py-2 rounded">
+        <i class="fas fa-sign-out-alt mr-2">
+        </i>
+        Logout
+       </button>
+      </div>
+     </div>
+   <!-- Main Content -->
+   <div class="flex-1">
+    <div class="bg-blue-600 p-4 flex justify-between items-center">
+     <h2 class="text-white text-xl font-semibold">
+      Sistem Informasi Manajemen Karyawan
+     </h2>
+     <div class="flex items-center">
+      <img alt="User Avatar" class="w-10 h-10 rounded-full" height="40" src="/assets/profil.png" width="40"/>
+     </div>
+    </div>
+    <div class="p-6">
+      <div class="bg-blue-600 p-4 flex justify-between items-center">
+      <h3 class="text-white text-xl font-semibold">
+      Admin Dashboard
+     </h3>
+     <div class="flex items-center">
+     </div>
+     </div>
+     <div class="grid grid-cols-4 gap-4">
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+       <div class="bg-blue-500 p-3 rounded-full text-white mr-4">
+        <i class="fas fa-users">
+        </i>
+       </div>
+       <div>
+        <p class="font-semibold">
+         Data Pegawai
+        </p>
+        <p class="text-2xl">
+         20
+        </p>
+       </div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+       <div class="bg-green-500 p-3 rounded-full text-white mr-4">
+        <i class="fas fa-calendar-check">
+        </i>
+       </div>
+       <div>
+        <p class="font-semibold">
+         Absensi Hari Ini
+        </p>
+        <p class="text-2xl">
+         0
+        </p>
+        <p class="text-sm text-gray-500">
+         2 October 2024
+        </p>
+       </div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+       <div class="bg-blue-500 p-3 rounded-full text-white mr-4">
+        <i class="fas fa-check-circle">
+        </i>
+       </div>
+       <div>
+        <p class="font-semibold">
+         Izin Menunggu Konfirmasi
+        </p>
+        <p class="text-2xl">
+         1
+        </p>
+       </div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+       <div class="bg-purple-500 p-3 rounded-full text-white mr-4">
+        <i class="fas fa-clock">
+        </i>
+       </div>
+       <div>
+        <p class="font-semibold">
+         Lembur Menunggu Konfirmasi
+        </p>
+        <p class="text-2xl">
+         1
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

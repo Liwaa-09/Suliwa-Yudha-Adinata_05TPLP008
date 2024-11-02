@@ -1,0 +1,339 @@
+<html>
+ <head>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white h-screen shadow-md">
+    <div class="p-4 flex items-center">
+     <img alt="University Logo" class="w-10 h-10 mr-2" height="50" src="/assets/logo.png" width="50"/>
+     <div>
+      <h1 class="text-lg font-bold">
+       SYNOVA
+      </h1>
+     </div>
+    </div>
+    <div class="p-4">
+     <div class="flex items-center mb-4">
+      <img alt="User Avatar" class="w-10 h-10 rounded-full mr-2" height="40" src="/assets/profil.png" width="40"/>
+      <div>
+       <p class="font-semibold">
+        Welcome, Suliwa Yudha
+       </p>
+       <p class="text-sm text-gray-600">
+        Administrator
+       </p>
+      </div>
+     </div>
+     <nav>
+      <ul>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="index.html">
+         <i class="fas fa-home mr-2">
+         </i>
+         Dashboard
+        </a>
+       </li>
+       <li class="mb-2">
+        <p class="text-gray-500 font-semibold px-2">
+         MENU KARYAWAN
+        </p>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-users mr-2">
+         </i>
+         Karyawan
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="jabatan.html">
+         <i class="fas fa-briefcase mr-2">
+         </i>
+         Jabatan
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="divisi.html">
+         <i class="fas fa-building mr-2">
+         </i>
+         Divisi
+        </a>
+       </li>
+       <li class="mb-2">
+        <p class="text-gray-500 font-semibold px-2">
+         MENU ABSENSI
+        </p>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="absensi.html">
+         <i class="fas fa-calendar-check mr-2">
+         </i>
+         Absensi
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="izin.html">
+         <i class="fas fa-calendar-times mr-2">
+         </i>
+         Izin
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="lembur.html">
+         <i class="fas fa-clock mr-2">
+         </i>
+         Lembur
+        </a>
+       </li>
+       <li class="mb-2">
+        <p class="text-gray-500 font-semibold px-2">
+         MENU PENGGAJIAN
+        </p>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-file-invoice-dollar mr-2">
+         </i>
+         Slip Gaji
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-file-alt mr-2">
+         </i>
+         Cetak Slip Gaji
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-file-alt mr-2">
+         </i>
+         Cetak Laporan
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-user-cog mr-2">
+         </i>
+         Pengguna
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="p-4">
+     <button class="w-full bg-blue-600 text-white py-2 rounded">
+      <i class="fas fa-sign-out-alt mr-2">
+      </i>
+      Logout
+     </button>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="bg-blue-600 text-white p-4 rounded shadow-md mb-6">
+     <h2 class="text-2xl font-semibold">
+      Dashboard
+     </h2>
+    </div>
+    <div class="bg-white p-6 rounded shadow-md">
+     <div class="flex justify-between items-center mb-4">
+      <h3 class="text-xl font-semibold">
+       Data Karyawan
+      </h3>
+      <a href="tambahkaryawan.html">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">
+       + Tambah Karyawan
+      </a>
+      </button>
+     </div>
+     <div class="flex justify-between items-center mb-4">
+      <div>
+       <label class="mr-2" for="entries">
+        Show
+       </label>
+       <select class="border rounded p-1" id="entries">
+        <option>
+         10
+        </option>
+        <option>
+         25
+        </option>
+        <option>
+         50
+        </option>
+        <option>
+         100
+        </option>
+       </select>
+       <span class="ml-2">
+        entries
+       </span>
+      </div>
+      <div>
+       <label class="mr-2" for="search">
+        Search:
+       </label>
+       <input class="border rounded p-1" id="search" type="text"/>
+      </div>
+     </div>
+     <table class="min-w-full bg-white border border-gray-200">
+        <thead>
+          <tr>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">No</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Kode</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Nama</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Email</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Alamat</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Jabatan</th>
+            <th class="py-3 px-4 border-b border-gray-300 text-center font-semibold text-gray-700">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">1</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K001</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Suliwa Yudha</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">suliwa@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Tebing Tinggi</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">CEO</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">2</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K002</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Dava Albian</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">daval@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Ciledug</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Direktur</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">3</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K003</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Sung Hanbin</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">hanbin@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Parung</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Supervisor</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">4</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K004</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Soyeon</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">yeonsi@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Jakarta</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Staff</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">5</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K005</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Ryujin</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">ryujin@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Pekanbaru</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Staff</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">5</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">K005</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Nikolas</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">niko@gmail.com</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Pekanbaru</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">Staff</td>
+            <td class="py-3 px-4 border-b border-gray-300 text-center">
+              <button class="text-blue-500 hover:text-blue-700 mr-2" title="Lihat">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="text-green-500 hover:text-green-700 mr-2" title="Edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="text-yellow-500 hover:text-yellow-700 mr-2" title="Gaji">
+                <i class="fas fa-dollar-sign"></i>
+              </button>
+              <button class="text-red-500 hover:text-red-700" title="Hapus">
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

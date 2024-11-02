@@ -1,0 +1,267 @@
+<html>
+ <head>
+  <title>
+   Tambah Data Karyawan
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white h-screen shadow-md">
+    <div class=" p-4 flex items-center"> 
+     <img alt="University Logo" class="w-10 h-10 mr-2" height="50" src="/assets/logo.png" width="50"/>
+      <h1 class="text-lg font-bold">
+       SYNOVA
+      </h1>
+    </div>
+    
+    <div class="p-4">
+      <div class="flex items-center mb-4">
+       <img alt="User Avatar" class="w-10 h-10 rounded-full mr-2" height="40" src="/assets/profil.png" width="40"/>
+       <div>
+        <p class="font-semibold">
+         Welcome, Suliwa Yudha
+        </p>
+        <p class="text-sm text-gray-600">
+         Administrator
+        </p>
+       </div>
+      </div>
+      <nav>
+       <ul>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="index.html">
+          <i class="fas fa-home mr-2">
+          </i>
+          Dashboard
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU KARYAWAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="karyawan.html">
+          <i class="fas fa-users mr-2">
+          </i>
+          Karyawan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="jabatan.html">
+          <i class="fas fa-briefcase mr-2">
+          </i>
+          Jabatan
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="divisi.html">
+          <i class="fas fa-building mr-2">
+          </i>
+          Divisi
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU ABSENSI
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="absensi.html">
+          <i class="fas fa-calendar-check mr-2">
+          </i>
+          Absensi
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="izin.html">
+          <i class="fas fa-calendar-times mr-2">
+          </i>
+          Izin
+         </a>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="lembur.html">
+          <i class="fas fa-clock mr-2">
+          </i>
+          Lembur
+         </a>
+        </li>
+        <li class="mb-2">
+         <p class="text-gray-500 font-semibold px-2">
+          MENU PENGGAJIAN
+         </p>
+        </li>
+        <li class="mb-2">
+         <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+          <i class="fas fa-file-invoice-dollar mr-2">
+          </i>
+          Slip Gaji
+         </a>
+        </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-file-alt mr-2">
+         </i>
+         Cetak Slip Gaji
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-file-alt mr-2">
+         </i>
+         Cetak Laporan
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-user-cog mr-2">
+         </i>
+         Pengguna
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="p-4">
+     <button class="w-full bg-blue-600 text-white py-2 rounded">
+      <i class="fas fa-sign-out-alt mr-2">
+      </i>
+      Logout
+     </button>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="bg-white p-6 rounded shadow-md">
+     <div class="mb-4">
+      <h2 class="text-xl font-bold">
+       Forms
+      </h2>
+      <nav class="text-sm text-gray-600">
+       <a class="hover:underline" href="#">
+        Karyawan
+       </a>
+       &gt;
+       <a class="hover:underline" href="#">
+        Tambah Data Karyawan
+       </a>
+      </nav>
+     </div>
+     <h3 class="text-lg font-bold mb-4">
+      Tambah Data Karyawan
+     </h3>
+     <form>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Nama Lengkap
+       </label>
+       <input class="w-full border border-gray-300 p-2 rounded" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Jenis Kelamin
+       </label>
+       <select class="w-full border border-gray-300 p-2 rounded">
+        <option>
+         --
+        </option>
+        <option>
+         Pria
+        </option>
+        <option>
+         Wanita
+        </option>
+       </select>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Email
+       </label>
+       <input class="w-full border border-gray-300 p-2 rounded" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        No HP
+       </label>
+       <input class="w-full border border-gray-300 p-2 rounded" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Alamat
+       </label>
+       <textarea class="w-full border border-gray-300 p-2 rounded"></textarea>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Password
+       </label>
+       <input class="w-full border border-gray-300 p-2 rounded" type="password"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Jabatan
+       </label>
+       <select class="w-full border border-gray-300 p-2 rounded">
+        <option>
+         --
+        </option>
+        <option>
+         CEO
+        </option>
+        <option>
+         Direktur
+        </option>
+        <option>
+         Supervisor
+        </option>
+        <option>
+         Staff
+        </option>
+       </select>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700">
+        Divisi
+       </label>
+       <select class="w-full border border-gray-300 p-2 rounded">
+        <option>
+         --
+        </option>
+        <option>
+         Operasional
+        </option>
+        <option>
+         Keuangan
+        </option>
+        <option>
+         SDM
+        </option>
+        <option>
+         Marketing
+        </option>
+        <option>
+         IT
+        </option>
+       </select>
+      </div>
+      <div class="flex justify-end">
+       <button class="bg-green-500 text-white px-4 py-2 rounded mr-2" type="submit">
+        Simpan
+       </button>
+       <a href="karyawan.html">
+       <button class="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:shadow-lg" type="reset">
+        Batal
+       </a>
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
